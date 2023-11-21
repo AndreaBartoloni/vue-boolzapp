@@ -1,0 +1,61 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-big{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.container-list-chat{
+    width:35%;
+    background-color: brown;
+    height: 100vh;
+}
+.container-chat{
+    width:65%;
+    background-color: blue;
+    height: 100vh;
+}
+
+.container-profile{
+    background-color: gray;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.my-profile{
+    height: 100%;
+}
+
+.my-profile > img {
+    height: 90%;   
+    border-radius: 50px;
+
+}
+
+.container-icon-profile{
+
+}
+
+
+.container-notifiche{
+    background-color: tomato;
+    height: 60px;
+}
+
+.container-search-chat{
+    height: 40px;
+    background-color: violet;
+}
+
+.chat-list{
+    display: flex;
+    align-items: center;
+}

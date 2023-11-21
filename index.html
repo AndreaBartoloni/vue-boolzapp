@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Boolzapp</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container-big">
+
+            <div class="container-list-chat">
+                <div class="container-profile">
+                    <div class="my-profile">
+                        <img src="img/avatar_io.jpg">
+                    </div>
+
+                    <div class="container-icon-profile">icon</div>
+                    
+                </div>
+                <div class="container-notifiche"></div>
+                <div class="container-search-chat"></div>
+                <div v-for="lista in contacts" class="chat-list">
+                    <img :src="lista.avatar">
+                    <p>{{lista.name}}</p>
+                </div>
+            </div>
+            <div class="container-chat">
+                <div class=""></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="boolzapp.js"></script>
+    
+</body>
+</html>
