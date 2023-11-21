@@ -29,7 +29,19 @@
                 </div>
             </div>
             <div class="container-chat">
-                <div class=""></div>
+                <div class="container-utente">
+                    <img :src="contacts.avatar">
+                    <p>{{contacts.name}}</p>
+                </div>
+                <div class="backgroud-image">
+                    <div  class="message-chat">
+                        
+                        
+                    </div>
+                    <p v-for="messaggi in contacts.messages">{{messaggi.message}}</p>
+                    
+                    
+                </div>
             </div>
             
         </div>

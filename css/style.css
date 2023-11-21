@@ -17,7 +17,7 @@ body{
 }
 .container-chat{
     width:65%;
-    background-color: blue;
+   
     height: 100vh;
 }
 
@@ -58,4 +58,19 @@ body{
 .chat-list{
     display: flex;
     align-items: center;
+    padding: 5px 0px;
+}
+.chat-list > img {
+    height: 60px;
+    border-radius: 50px;
+}
+
+.container-utente{
+    background-color: gray;
+    height: 70px;
+}
+
+.backgroud-image{
+    height: 90vh;
+    background-image: url(/img/mine.jpg);
 }
