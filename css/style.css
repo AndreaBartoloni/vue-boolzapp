@@ -75,6 +75,7 @@ body{
 .backgroud-image{
     height: 90vh;
     background-image: url(/img/mine.jpg);
+    padding-top: 90px;
 }
 .container-utente{
     display: flex;
@@ -87,25 +88,36 @@ p{
     margin: 0;
     padding: 10px;
 }
-.backgroud-image{
+.backgroud-image {
     position: relative;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 140px - 90px);
+    display: flex;
+    flex-direction: column; /* Imposta la direzione di layout a colonna */
 }
+
+.sent, .received {
+    width: 100%;
+    max-width: 30%;
+    margin-bottom: 10px;
+    padding: 15px 0px 15px 20px;
+    border-radius: 10px;
+}
+
 .sent {
-    background-color: yellow;
-    color: black;
-    right: 70px;
-    top: 70px;
-    
+    background-color: #DCF8C6;
+    color: #000;
+    margin-left: auto;
+    margin-right: 70px;
 }
 
 .received {
-    background-color: white;
-    color: black;
-    /* position: absolute; */
-    left: 70px;
-    top: 70px;
+    background-color: #FFF;
+    color: #000;
+    margin-right: auto;
+    margin-left: 70px;
+    
 }
+
 .container-send-message{
     display: flex;
     align-items: center;
