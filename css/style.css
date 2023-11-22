@@ -59,6 +59,7 @@ body{
     display: flex;
     align-items: center;
     padding: 5px 0px;
+    cursor: pointer;
 }
 .chat-list > img {
     height: 60px;
@@ -73,4 +74,35 @@ body{
 .backgroud-image{
     height: 90vh;
     background-image: url(/img/mine.jpg);
+}
+.container-utente{
+    display: flex;
+}
+img{
+    height: 60px;
+    border-radius: 50px;
+}
+p{
+    margin: 0;
+    padding: 10px;
+}
+.backgroud-image{
+    position: relative;
+}
+.sent {
+    background-color: yellow;
+    color: black;
+
+    right: 70px;
+    top: 70px;
+    
+}
+
+.received {
+    background-color: white;
+    color: black;
+
+    /* position: absolute; */
+    left: 70px;
+    top: 70px;
 }

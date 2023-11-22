@@ -23,22 +23,22 @@
                 </div>
                 <div class="container-notifiche"></div>
                 <div class="container-search-chat"></div>
-                <div v-for="lista in contacts" class="chat-list">
+                <div v-for="(lista, index) in contacts" @click="clickChat(index)" class="chat-list">
                     <img :src="lista.avatar">
                     <p>{{lista.name}}</p>
                 </div>
             </div>
             <div class="container-chat">
                 <div class="container-utente">
-                    <img :src="contacts.avatar">
-                    <p>{{contacts.name}}</p>
+                    <img :src="contacts[contatore].avatar">
+                    <span>{{contacts[contatore].name}}</span>
                 </div>
                 <div class="backgroud-image">
-                    <div  class="message-chat">
-                        
-                        
+                    <div v-for="message in contacts[contatore].messages"  class="message-chat">
+                        <!-- <p :class="{ 'send': contacts[contatore].messages[contatore].message}" >{{ contacts[contatore].messages[contatore].message }}</p> -->
+                        <p :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }">{{ message.message }}</p>
                     </div>
-                    <p v-for="messaggi in contacts.messages">{{messaggi.message}}</p>
+                    
                     
                     
                 </div>

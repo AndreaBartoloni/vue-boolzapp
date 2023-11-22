@@ -165,11 +165,15 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ], 
+            contatore: 0
             
         }
     },
     methods: {
-        
+        clickChat(index){
+            // gli stiamo dicendo che la variabile contatore è uguale alla posizione del messaggio all'interno dell'array
+            this.contatore = index;
+        }
     },
 }).mount('#app');
