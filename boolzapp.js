@@ -184,9 +184,20 @@ createApp({
             }
             this.contacts[this.contatore].messages.push(newMessage);
             console.log(this.contacts[this.contatore].messages);
-        }, 
-        receivMessage(){
+            this.receivMessage(); //cosi facendo la funzione si attiverà dopo che verrà generato il nuovo messaggio
             
+        }, 
+        receivMessage() {
+            // Simula una risposta dopo 1 secondo
+            setTimeout(() => {
+                let receivedMessage = {
+                    message: 'ok',
+                    status: 'received'
+                };
+        
+                this.contacts[this.contatore].messages.push(receivedMessage);
+                console.log(this.contacts[this.contatore].messages);
+            }, 1000);
         }
     },
 }).mount('#app');
