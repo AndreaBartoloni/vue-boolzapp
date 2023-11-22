@@ -12,7 +12,6 @@ body{
 
 .container-list-chat{
     width:35%;
-    background-color: brown;
     height: 100vh;
 }
 .container-chat{
@@ -22,7 +21,7 @@ body{
 }
 
 .container-profile{
-    background-color: gray;
+    background-color: #e7e7e7;
     height: 70px;
     display: flex;
     align-items: center;
@@ -60,6 +59,7 @@ body{
     align-items: center;
     padding: 5px 0px;
     cursor: pointer;
+    border-top:1px solid #e7e7e7;
 }
 .chat-list > img {
     height: 60px;
@@ -67,8 +67,9 @@ body{
 }
 
 .container-utente{
-    background-color: gray;
+    background-color: #e7e7e7;
     height: 70px;
+    align-items: center;
 }
 
 .backgroud-image{
@@ -88,11 +89,11 @@ p{
 }
 .backgroud-image{
     position: relative;
+    height: calc(100vh - 140px);
 }
 .sent {
     background-color: yellow;
     color: black;
-
     right: 70px;
     top: 70px;
     
@@ -101,8 +102,34 @@ p{
 .received {
     background-color: white;
     color: black;
-
     /* position: absolute; */
     left: 70px;
     top: 70px;
+}
+.container-send-message{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    background-color: #e7e7e7;
+}
+.input-message{
+    width: 80%;
+    text-align: center;
+}
+.input-message > input{
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+.emoji, .voice-message{
+    width: 20%;
+    text-align: center;
+    
+}
+.emoji img,
+.voice-message > img {
+    width: 15%;
+    text-align: center;
 }

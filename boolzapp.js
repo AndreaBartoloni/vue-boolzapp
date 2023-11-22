@@ -166,7 +166,8 @@ createApp({
                     ],
                 }
             ], 
-            contatore: 0
+            contatore: 0,
+            valueMessage: ""
             
         }
     },
@@ -174,6 +175,18 @@ createApp({
         clickChat(index){
             // gli stiamo dicendo che la variabile contatore è uguale alla posizione del messaggio all'interno dell'array
             this.contatore = index;
+        },
+        addMessage(){
+            
+            let newMessage = {
+                message: this.valueMessage,
+                status: 'sent'
+            }
+            this.contacts[this.contatore].messages.push(newMessage);
+            console.log(this.contacts[this.contatore].messages);
+        }, 
+        receivMessage(){
+            
         }
     },
 }).mount('#app');

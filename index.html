@@ -38,9 +38,20 @@
                         <!-- <p :class="{ 'send': contacts[contatore].messages[contatore].message}" >{{ contacts[contatore].messages[contatore].message }}</p> -->
                         <p :class="{ 'sent': message.status === 'sent', 'received': message.status === 'received' }">{{ message.message }}</p>
                     </div>
-                    
-                    
-                    
+                </div>
+                <div class="container-send-message">
+                    <div class="emoji">
+                        <img src="img/face-smile-regular.svg">
+                    </div>
+                    <div class="input-message">
+                        <input v-model="valueMessage" type="text" placeholder="Scrivi un messaggio" >
+                    </div>
+                    <div class="voice-message">
+                        <img src="img/paper-plane-regular.svg" @click="addMessage()">
+                    </div>
+                    <div class="voice-message">
+                        <img src="img/face-smile-regular.svg">
+                    </div>
                 </div>
             </div>
             
