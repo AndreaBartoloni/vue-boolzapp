@@ -167,7 +167,8 @@ createApp({
                 }
             ], 
             contatore: 0,
-            valueMessage: ""
+            valueMessage: "",
+            searchTerm: ""
             
         }
     },
@@ -198,6 +199,11 @@ createApp({
                 this.contacts[this.contatore].messages.push(receivedMessage);
                 console.log(this.contacts[this.contatore].messages);
             }, 1000);
+        },
+        searchUser() {
+            this.filteredContacts = this.contacts.filter(contact =>
+                contact.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+            );
         }
     },
 }).mount('#app');

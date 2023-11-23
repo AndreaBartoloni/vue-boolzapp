@@ -50,8 +50,37 @@ body{
 }
 
 .container-search-chat{
-    height: 40px;
-    background-color: violet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.container-search-chat {
+    width: 100%;
+   
+    
+}
+.container-search-user{
+    width: 10%;
+}
+.container-search-user > img{
+    width: 40%;
+}
+.container-search-input {
+    width: 100%;
+    margin: auto;
+    border: none;
+}
+.container-search-input > input {
+    width: 90%;
+    margin: auto;
+    border: none;
+}
+.search-user{
+    width: 100%;
 }
 
 .chat-list{
