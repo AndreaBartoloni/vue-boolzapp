@@ -50,8 +50,7 @@ body{
 }
 
 .container-search-chat{
-    padding-top: 10px;
-    padding-bottom: 10px;
+
     background-color: #e7e7e7;
     display: flex;
     align-items: center;
@@ -60,14 +59,17 @@ body{
 }
 .container-search-chat {
     width: 100%;
-   
+    background-color: white;
+
     
 }
 .container-search-user{
     width: 10%;
+    
 }
 .container-search-user > img{
     width: 40%;
+    height: 40%;
 }
 .container-search-input {
     width: 100%;
@@ -78,6 +80,7 @@ body{
     width: 90%;
     margin: auto;
     border: none;
+    padding:5px;
 }
 .search-user{
     width: 100%;

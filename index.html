@@ -26,9 +26,12 @@
                     <div class="container-search-user" >
                         <img @click="searchUser()" src="img/magnifying-glass-solid.svg" class="search-user" >
                     </div>
-                    <div class="container-search-input">
-                        <input type="search" v-model="searchTerm"  placeholder="Cerca contatti">
+                    <div>
+                        <div class="container-search-input">
+                            <input type="search" v-model="searchTerm"  placeholder="Cerca contatti">
+                        </div>
                     </div>
+                  
                 </div>
                 <div v-for="(lista, index) in contacts" @click="clickChat(index)"  class="chat-list">
                     <img :src="lista.avatar">
