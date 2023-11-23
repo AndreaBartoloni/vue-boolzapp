@@ -23,14 +23,14 @@
                 </div>
                 <div class="container-notifiche"></div>
                 <div class="container-search-chat">
-                    <div class="container-search-user" @click="searchUser()">
-                        <img src="img/magnifying-glass-solid.svg" class="search-user" >
+                    <div class="container-search-user" >
+                        <img @click="searchUser()" src="img/magnifying-glass-solid.svg" class="search-user" >
                     </div>
                     <div class="container-search-input">
-                        <input type="search" v-model="searchTerm" @input="searchUser" placeholder="Cerca contatti">
+                        <input type="search" v-model="searchTerm"  placeholder="Cerca contatti">
                     </div>
                 </div>
-                <div v-for="(lista, index) in contacts" @click="clickChat(index)" class="chat-list">
+                <div v-for="(lista, index) in contacts" @click="clickChat(index)"  class="chat-list">
                     <img :src="lista.avatar">
                     <p>{{lista.name}}</p>
                 </div>

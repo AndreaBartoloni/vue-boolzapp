@@ -201,9 +201,17 @@ createApp({
             }, 1000);
         },
         searchUser() {
-            this.filteredContacts = this.contacts.filter(contact =>
-                contact.name.toLowerCase().includes(this.searchTerm.toLowerCase())
-            );
+            // Itera attraverso gli elementi dell'array
+            for (const contact of this.contacts) {
+                // Controlla se il nome del contatto corrente include il termine di ricerca
+                if (contact.name.toLowerCase().includes(this.searchTerm.toLowerCase())) {
+                    console.log("Trovato:", contact.name);
+                    // Puoi fare qualcos'altro qui con il contatto trovato
+                    return; // Termina la ricerca quando trovi il primo contatto corrispondente
+                }
+            }
+            console.log("Nessun contatto trovato");
         }
+        
     },
 }).mount('#app');
