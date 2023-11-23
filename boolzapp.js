@@ -207,7 +207,7 @@ createApp({
                 if (contact.name.toLowerCase().includes(this.searchTerm.toLowerCase())) {
                     console.log("Trovato:", contact.name);
                     // Puoi fare qualcos'altro qui con il contatto trovato
-                    return; // Termina la ricerca quando trovi il primo contatto corrispondente
+                    
                 }
             }
             console.log("Nessun contatto trovato");
