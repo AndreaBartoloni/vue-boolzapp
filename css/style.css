@@ -27,10 +27,19 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
-
+.container-icon-profile{
+    display: flex;
+    align-items: center;
+}
+.icon-myprofile > img{
+    height: 23px;
+    margin: 0px 10px 0px 10px;
+    filter: opacity(0.5);
+}
 .my-profile{
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .my-profile > img {
@@ -39,14 +48,34 @@ body{
 
 }
 
-.container-icon-profile{
-
-}
 
 
 .container-notifiche{
-    background-color: tomato;
+    background-color: #9fd8f9;
     height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.container-bell{
+    width: 10%;
+    height: 80%;
+    text-align: center;
+    background-color: white;
+    margin: 40px 10px 40px 20px;
+    border-radius: 50px;
+}
+.container-gray{
+    background-color: #e7e7e7;
+    padding: 5px;
+}
+.container-bell > img{
+    margin-top: 10px;
+    height: 50%;
+}
+
+.container-text-notifications > p{
+    padding: 0;
 }
 
 .container-search-chat{
@@ -56,11 +85,12 @@ body{
     align-items: center;
     text-align: center;
     width: 100%;
+
 }
 .container-search-chat {
     width: 100%;
     background-color: white;
-
+    border-radius: 3px;
     
 }
 .container-search-user{
@@ -84,6 +114,7 @@ body{
 }
 .search-user{
     width: 100%;
+    vertical-align: middle;
 }
 
 .chat-list{
@@ -92,6 +123,7 @@ body{
     padding: 5px 0px;
     cursor: pointer;
     border-top:1px solid #e7e7e7;
+    margin-left: 15px;
 }
 .chat-list > img {
     height: 60px;
@@ -101,6 +133,12 @@ body{
 .container-utente{
     background-color: #e7e7e7;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-utente > div{
+    display: flex;
     align-items: center;
 }
 
@@ -169,8 +207,7 @@ p{
 }
 .emoji, .voice-message{
     width: 20%;
-    text-align: center;
-    
+    text-align: center; 
 }
 .emoji img,
 .voice-message > img {

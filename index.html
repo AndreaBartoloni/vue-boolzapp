@@ -16,23 +16,45 @@
                 <div class="container-profile">
                     <div class="my-profile">
                         <img src="img/avatar_io.jpg">
+                        <p>Sofia</p>
                     </div>
 
-                    <div class="container-icon-profile">icon</div>
-                    
-                </div>
-                <div class="container-notifiche"></div>
-                <div class="container-search-chat">
-                    <div class="container-search-user" >
-                        <img @click="searchUser()" src="img/magnifying-glass-solid.svg" class="search-user" >
-                    </div>
-                    <div>
-                        <div class="container-search-input">
-                            <input type="search" v-model="searchTerm"  placeholder="Cerca contatti">
+                    <div class="container-icon-profile">
+                        <div class="icon-myprofile">
+                            <img src="img/circle-notch-solid.svg">
+                        </div>
+                        <div class="icon-myprofile">
+                            <img src="img/message-solid.svg">
+                        </div>
+                        <div class="icon-myprofile">
+                            <img src="img/ellipsis-vertical-solid.svg">
                         </div>
                     </div>
-                  
+                    
                 </div>
+                <div class="container-notifiche">
+                    <div class="container-bell">
+                        <img src="img/bell-slash-solid.svg">
+                    </div>
+                    <div class="container-text-notifications">
+                        <p>Ricevi notifiche di nuovi messaggi</p>
+                        <p>Attiva notifiche desktop</p>
+                    </div>
+                </div>
+                <div class="container-gray">
+                    <div class="container-search-chat">
+                        <div class="container-search-user" >
+                            <img @click="searchUser()" src="img/magnifying-glass-solid.svg" class="search-user" >
+                        </div>
+                        <div>
+                            <div class="container-search-input">
+                                <input type="search" v-model="searchTerm"  placeholder="Cerca contatti">
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+                
                 <div v-for="(lista, index) in contacts" @click="clickChat(index)"  class="chat-list">
                     <img :src="lista.avatar">
                     <p>{{lista.name}}</p>
@@ -40,8 +62,22 @@
             </div>
             <div class="container-chat">
                 <div class="container-utente">
-                    <img :src="contacts[contatore].avatar">
-                    <span>{{contacts[contatore].name}}</span>
+                    <div>
+                        <img :src="contacts[contatore].avatar">
+                        <span>{{contacts[contatore].name}}</span>
+                    </div>
+                    <div>
+                        <div class="icon-myprofile">
+                            <img src="img/circle-notch-solid.svg">
+                        </div>
+                        <div class="icon-myprofile">
+                            <img src="img/message-solid.svg">
+                        </div>
+                        <div class="icon-myprofile">
+                            <img src="img/ellipsis-vertical-solid.svg">
+                        </div>
+                    </div>
+                
                 </div>
                 <div class="backgroud-image">
                     <div v-for="message in contacts[contatore].messages"  class="message-chat">
