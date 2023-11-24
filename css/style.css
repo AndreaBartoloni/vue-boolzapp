@@ -43,8 +43,9 @@ body{
 }
 
 .my-profile > img {
-    height: 90%;   
+    height: 75%;   
     border-radius: 50px;
+    margin-left: 20px;
 
 }
 
@@ -140,6 +141,12 @@ body{
 .container-utente > div{
     display: flex;
     align-items: center;
+}
+
+.container-utente > div > img{
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .backgroud-image{
